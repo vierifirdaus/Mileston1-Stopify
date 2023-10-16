@@ -1,20 +1,125 @@
-## Panduan Pengerjaan
-Berikut adalah hal yang harus diperhatikan untuk pengumpulan tugas ini:
-1. Buatlah grup pada Gitlab dengan format "IF3110-2023-01-XX", dengan XX adalah nomor kelompok (untuk K1 dan K2) atau kode kelompok (untuk K3).
-2. Tambahkan anggota tim pada grup anda.
-3. **Fork** pada repository ini dengan organisasi yang telah dibuat.
-4. Ubah hak akses repository hasil Fork anda menjadi **private**.
-5. Hal-hal yang harus diperhatikan.
-    * Silakan commit pada repository anda (hasil fork)
-    * Lakukan beberapa commit dengan pesan yang bermakna, contoh: “add register form”, “fix logout bug”, jangan seperti “final”, “benerin dikit”, “fix bug”.
-    * Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan mempengaruhi penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
-    * Commit dari setiap anggota tim akan mempengaruhi penilaian.
-    * Jadi, setiap anggota tim harus melakukan commit yang berpengaruh terhadap proses pembuatan aplikasi.
-    * Sebagai panduan bisa mengikuti [semantic commit](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716).
-6. Buatlah file README yang berisi:
-    * Deskripsi aplikasi web
-    * Daftar requirement
-    * Cara instalasi
-    * Cara menjalankan server
-    * Screenshot tampilan aplikasi (tidak perlu semua kasus, minimal 1 per halaman), dan 
-    * Penjelasan mengenai pembagian tugas masing-masing anggota (lihat formatnya pada bagian pembagian tugas).
+# Deskripsi aplikasi web
+
+Aplikasi web ini merupakan sebuah platform sederhana yang memungkinkan pengguna untuk mendengarkan musik dan menelusuri album, dengan inspirasi yang diambil dari Spotify. Dikembangkan tanpa menggunakan framework, aplikasi ini dirancang menggunakan PHP, HTML, CSS, dan JS, dengan implementasi Ajax menggunakan XHR. Database aplikasi disimpan di awan dengan menggunakan PostgreSQL. Proyek ini diinisiasi sebagai bagian dari tugas besar dalam mata kuliah Pemrograman Aplikasi Berbasis Web.
+
+# Daftar requirement
+
+# Cara instalasi
+
+1. Clone repository ini
+2. Install XAMPP
+
+# Cara menjalankan server
+
+### XAMPP
+
+Pindahkan isi dari repository ini ke htdocs pada XAMPP. Konfigurasi database dapat dilihat pada inc/dotenv.php .
+
+### Terminal 
+
+1. cd public
+2. jalankan command php -S localhost:portnumber
+
+# Screenshot tampilan aplikasi
+
+### Login Page
+
+![](ss/login.png)
+
+### Register Page
+
+![](ss/register.png)
+
+### Home Page
+
+![](ss/home.png)
+
+### Search, Sort, Filter Page
+
+![](ss/search.png)
+
+### Daftar Album Page
+
+![](ss/albums.png)
+
+### Detail Album Page
+
+![](ss/album.png)
+
+### Detail Lagu Page
+
+![](ss/music.png)
+
+### Daftar Artist
+
+![](ss/artist.png)
+
+### Daftar Genre
+
+![](ss/genres.png)
+
+### Daftar Liked Song
+
+![](ss/liked.png)
+
+### Edit Album
+
+![](ss/editalbum.png)
+
+### Edit Lagu
+
+![](ss/editsong.png)
+
+### Edit Genre
+
+![](ss/genreedit.png)
+
+### Tambah Album
+
+![](ss/addalbum.png)
+
+### Tambah Lagu
+
+![](ss/addsong.png)
+
+### Tambah Genre
+
+![](ss/genreinput.png)
+
+# Pembagian tugas
+
+## Frontend / Client-side
+
+1. Login: 13521099
+2. Register: 13521099
+3. Home: 13521099
+4. Daftar Album: 13521099
+5. Daftar Genre : 13521056, 13521099
+6. Daftar Artist : 13521056, 13521099
+5. Search, Sort, Filter: 13521056
+6. Detail Lagu: 13521099
+7. Detail Album: 13521099
+8. Edit Lagu: 13521056
+9. Edit Album: 13521056
+10. Edit Genre : 13521056
+11. Edit Artist : 13521056
+10. Tambah Album: 13521056
+11. Tambah Lagu: 13521056
+14. Navbar: 13521056
+15. Responsive Adjustments: 10023089, 13521056, 13521099
+16. Global Styling: 10023089, 13521056, 13521099
+17. Initial Design: 10023089, 13521056, 13521099
+
+## Backend / Server-side
+
+1. Auth (Login, Register, Logout): 13521056, 13521099
+3. Home: 13521056, 13521099
+4. Search, Sort, Filter: 13521056, 13521099
+5. Detail Lagu: 13521056, 13521099
+6. Detail Album: 13521056, 13521099
+7. Daftar Album: 13521056, 13521099
+8. Edit Lagu: 13521056, 13521099
+9. Edit Album: 13521056, 13521099
+10. Tambah Album: 13521056, 13521099
+11. Tambah Lagu: 13521056
+13. Initial Project, Database : 10023089, 13521056, 13521099
