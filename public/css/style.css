@@ -1,0 +1,415 @@
+
+
+html, body{
+    background-color: #101010;
+    padding: 0;
+    margin:0;
+}
+
+.whole-wrapper {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+a, a:visited, a:active {
+    color: inherit;
+}
+
+.dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+
+    border-radius: 0.9375rem;
+    background-color: black;
+    transform: translate(-50%, -50%);
+
+    padding: 5% 2% 5% 5%;
+    overflow-y:auto;
+}
+
+.dialog #genre-card-preview { 
+    background-color: #3271a8;;
+    margin-bottom: 7%;
+}
+
+.dialog-wrapper img {
+    width: 50%;
+    border-radius: 5%;
+    aspect-ratio: 1/1;
+}
+
+/* .d-none {
+    display: none;
+} */
+
+.dialog label {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dialog input[type=text], .dialog select, .file-input, .dialog input[type=color]{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 10px 0px;
+    border: none;
+}
+
+.dialog input[type=color] {
+    border-radius: 15%;
+}
+
+.dialog input[type=file] {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.dialog input[type=text], .dialog select, .file-input {
+    background-color: white;
+    padding-left: 3%;
+    outline: none;
+    border-color: #D9D9D9;
+    border-radius: 10px;
+    border-width: 1px;
+    color: #121212;
+    width: 75%;
+    height: 2.9375rem; 
+
+    display: flex;
+
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    text-align: center; /* Center text horizontally (optional) */
+}
+
+.file-input p {
+    
+    color: black;
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dialog .dialog-button {
+    margin: 40px 0px 10px 0px;
+    font-family: DM Sans;
+    width: 25%;
+    height: 2.9375rem;
+    border-radius: 500px ;
+    font-weight: 700; 
+}
+
+.dialog .dialog-submit {
+    background-color: #4BD759;
+}
+
+.dialog .dialog-delete {
+    margin-left: 10%;
+    background-color: #911f2e;
+}
+
+.dialog-wrapper {
+    position: fixed;
+	height: 100vh;
+    width: 100vw;
+	border-radius: 2px;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+}
+
+
+.page-wrapper {
+    flex:1;
+    display: inline-block;
+    padding: 20px;
+}
+
+.sidebar p {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.12rem;
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 20vw;
+    background-color: black;
+    height: 100vh;
+    position: sticky ; 
+}
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    font-family: DM Sans;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: #282828;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+  }
+
+.big-card {
+    width: 16.125rem;
+    height: 16.125rem;
+    flex-shrink: 0;
+    border-radius: 2.6875rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #3E95FB;
+}
+
+.genres {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.add-btn {
+    background-image: url("../assets/logo/add_button.svg");
+    background-size: cover;
+    padding: 5px;
+    border-radius: 10%;
+    aspect-ratio: 1/1;
+    width: 2rem;
+}
+
+.add-btn img {
+    rotate: 20;
+    width: 100%;
+}
+
+
+.genre-card {
+    width: 12rem;
+    position:   relative;
+    aspect-ratio: 1/1;
+    border-radius: 16.7%;
+    background: #3e9453;
+    overflow: hidden;
+}
+
+.genre-card img {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    aspect-ratio: 1/1;
+    width: 60%;
+    transform: rotate(20.428deg);
+}
+
+.genre-card p {
+    color: #FFF;
+    font-family: DM Sans;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.artist-card {
+    position: relative;
+    width: 10rem;
+    aspect-ratio: 206/297;
+    background: #000; 
+    border-radius: 5%;
+}
+
+.artist-card .edit-btn{
+    right: 0;
+}
+
+.edit-btn {
+    background-image: url("../assets/logo/edit_button.svg");
+    background-color: rgb(57, 49, 49);
+    border-radius: 20%;
+    position: absolute;
+    background-size: cover;
+    right: left;
+    bottom: 0;
+    width: 20%;
+    aspect-ratio: 1/1;
+    z-index: 3;
+
+    margin: 5% 5% 5% 5%;
+}
+
+
+.artist-card .img-container {
+    width: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.artist-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-card p {
+    font-family: DM Sans;
+
+}
+
+.artist-card .artist-name {
+    margin-left:12.5%;
+    font-size: 20px; 
+    color: #FFF; 
+    font-weight: 700; 
+    letter-spacing: -0.0712rem; 
+}
+
+.artist-card .card-type {
+    margin-left: 12.5%;
+    color: #D9D9D9; 
+    font-weight: 400; 
+    letter-spacing: -1.1392px; 
+    font-size: 1.25rem; 
+}
+
+.artist-result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+
+.search-bar {
+    width: 90%;
+    outline: none;
+    padding-left: 3%;
+    border: 0.0625rem solid #ccc;
+    max-width: 30.75rem;
+    height: 2.5625rem; 
+    background: #FFF;
+    border-radius: 62.5rem;
+    font-family: DM Sans;
+}
+
+.search-bar::placeholder {
+    font-family: DM Sans;
+    color:blackasd
+}
+
+.search-by-filter {
+    padding: 5px 5px 5px 5px;
+    border-radius: 0.9375rem;
+    background: #303030;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+    border-width: 0;
+}
+
+.search-by-filter:active {
+    background-color: #464079;
+}
+
+.search-section .search-bar{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-section button, .search-section .setting-button {
+    margin: 0px 0px 0px 0px;
+    display: inline;
+    position: relative;
+
+}
+
+.search-settings {
+    display: flex;
+    align-items: center;
+    height: 2.5625rem; 
+    gap: 5px
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    color: #FFF;
+    text-align: start;
+    font-family: DM Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.12rem;
+    margin: 0 3% 0 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: white;
+    font-family: DM Sans;
+}
+a {
+    color: white;
+    text-decoration: none; /* no underline */
+  }
+th{
+    color: white;
+}
+td{
+    color: white;
+}
+/* h1{
+    font-size: 40px;
+    margin: 0;
+}
+h2{
+    font-size: 32px;
+    margin: 0;
+}
+h3{
+    font-size: 24px;
+    margin: 0;
+}
+h4{
+    font-size: 20px;
+    margin: 0;
+}
+p{
+    font-size: 20px;
+    margin: 0;
+} */

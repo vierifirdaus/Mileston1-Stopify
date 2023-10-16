@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .container{
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .sidebar{
+    background-color: #000;
+    width: 331px;
+    padding: 57px 98px 0px 57px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .main-content{
+    background-color: #101010;
+    flex-grow: 1;
+  }
+
+  .sidebar .description-header {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+  }
+
+  .sidebar .header .list-item {
+    display: flex;
+    flex-direction: row;
+    margin: 24px;
+    border-radius: 8px;
+    width: 115px;
+    height: 106px;
+    box-sizing: border-box;
+  }
+
+  .sidebar .main .list-item .description {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    
+  }
+  
+  .sidebar .main .list-item .icon {
+    margin-right: 24px;
+    width: 24px;
+    height: 26px;
+    flex-shrink: 0;
+  }
+
+  .sidebar .main .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    
+    border-radius: 6px;
+  }
+
+  .sidebar .main .list-item:hover {
+    background: #282828;
+    transition: all ease-in .3s;
+  }
+
+  .main-content .border{
+    width: 106px;
+    height: 106px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #17424B 35.42%, rgba(23, 66, 75, 0.00) 100%);
+    position: fixed;
+    bottom: 73%;
+    left: 30%;
+  }
+
+  .main-content h1{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    position: fixed;
+    left: 40%;
+    top: 12%;
+  }
+
+  .main-content h2{
+    color: #FFF;
+    width: 329px;
+    height: 41px;
+    font-family: DM Sans ,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.4px;
+    position: fixed;
+    left: 40%;
+    top: 13%;
+  }
+
+  .main-content .tombol-like{
+    background-color: none;
+    color: #fff;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 47%;
+    top: 23%;
+
+  }
+
+  .main-content .fas.fa-heart{
+    margin-right: 2px;
+    color: #267C8E80;
+    
+  }
+
+  .main-content .tombol-download{
+    color: #000;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    left: 50%;
+    top: 23%;
+    gap: 10px;
+  }
+
+  .main-content .bi.bi-download{
+    margin-right: 2px;
+    color: #267C8E80;
+    
+  }
+
+  body{
+    overflow: hidden;
+  }
+  
+  .main-content .songlist{
+    width: 70%;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    position: fixed;
+    top: 160px;
+  }
+  
+  .main-content .songlist .header_songlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #101010;
+  }
+  
+  .main-content .songlist .header_songlist p{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+
+  }
+
+  .main-content .songlist .header_songlist .input-pencarian{
+    border-radius: 20px;
+    background: var(--Dark-Grey, #282828);
+    display: flex;
+    width: 145px;
+    height: 27px;
+    padding: 4px 4px 4px 8px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .main-content .songlist .header_songlist .input-pencarian:hover{
+    border-color: #FFF;
+  }
+
+
+      
+  .main-content .songlist .song_section{
+    height: 650px;
+    overflow: auto;
+  }
+  
+  .main-content .song_section .song_section .table{
+    color: #101010;
+    width: 70%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+  }
+  
+  .main-content .main-content .song_section .song_section .table .thead th{
+    position: sticky;
+    top: 0;
+    background-color: #878787;
+    stroke-width: 2px;
+    font-style: 15px;
+  }
+  
+  .main-content .main-content .song_section .song_section .table .th, td{
+    padding: 2px 50px;
+    word-break: break-all;
+    text-align: center;
+  }
+
+  .main-content .button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  ::placeholder{
+    color: #101010;
+  }

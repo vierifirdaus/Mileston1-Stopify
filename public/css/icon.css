@@ -1,0 +1,24 @@
+
+.user-info {
+    position: sticky;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 150px;
+    height: 49px;
+    border-style: solid;
+    border-color: white ;
+    border-radius: 40px;
+}
+
+.user-icon {
+    margin-right: 10px;
+    color: white;
+}
+
+.user-icon i {
+    font-size: 24px;
+}

@@ -1,0 +1,26 @@
+/* Style for the container */
+.limit-page {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Style for the paragraph */
+.limit-page p {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Style for the select box */
+.limit-page select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional: Style for the options within the select box */
+.limit-page select option {
+    background-color: #fff;
+    color: #333;
+}

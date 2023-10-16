@@ -1,0 +1,43 @@
+
+
+
+.table-container .header_songlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #101010;
+}
+
+
+.search-result table, .table-container table{
+    width: 100%;
+}
+
+.search-result th, .table-container th{
+    font-family: DM Sans !important;  
+    position: sticky;
+    top: 0;
+    background-color: #3c3c3c28;
+    stroke-width: 2px;
+    font-style: 15px;
+    border-radius: 500px;
+
+}
+
+.search-result td, table{
+    padding: 2px 20px;
+    word-break: break-all;
+    text-align: left;
+    font-family: DM Sans;
+}
+
+.search-result .edit-btn{
+    display: inline-block;
+    width: 2rem;
+    position: relative;
+}
+
+.search-table a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+}

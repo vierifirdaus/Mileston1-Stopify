@@ -1,0 +1,35 @@
+.liked-detail{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+.liked-detail img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.songlist{
+    width: 70%;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    position: fixed;
+    margin-top: 20px;
+  }
+
+ .songlist .header_songlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #101010;
+}
+

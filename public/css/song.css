@@ -1,0 +1,53 @@
+.song-item-long{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius:
+     5px;
+}
+
+
+
+img.second{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.song-item-container h4,.song-item-container p{
+    margin: 0;
+    padding-left: 20px;
+}
+
+.song-item-medium {
+    position: relative;
+    background-color: black;
+    border-radius: 10%;
+    width: 200px;
+    padding: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    aspect-ratio: 2/3;
+}
+
+.song-item-medium img{
+    width: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    left: 50%;
+}
+
+.song-item-medium .edit-btn {
+    right: 0;
+}
+
+img.first {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}

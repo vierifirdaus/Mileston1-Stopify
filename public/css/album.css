@@ -1,0 +1,19 @@
+.album-container{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 20px;
+}
+.album-container img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.album-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
