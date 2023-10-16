@@ -24,7 +24,7 @@ Pindahkan isi dari repository ini ke htdocs pada XAMPP. Konfigurasi database dap
 
 ### Login Page
 
-![](ss/login.png)
+![login](ss/login.png)
 
 ### Register Page
 
