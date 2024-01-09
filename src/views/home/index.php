@@ -18,7 +18,7 @@ require_once(PROJECT_ROOT_PATH . "/src/views/partials/font.php");
     <link rel="stylesheet" href="css/song.css">
 
     <?php echo Font(); ?>
-    <title>Home Page</title>
+    <title>Stopify - Homepage</title>
     <script src="js/home.js"></script>
 <body>
     <div class="whole-wrapper">

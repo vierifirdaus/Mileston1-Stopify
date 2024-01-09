@@ -42,9 +42,9 @@ function sendForm() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 try {
-                    // const responseData = JSON.parse(xhr.responseText);
-
-                    if (xhr.responseText.data === "gagal") {
+                    const responseData = JSON.parse(xhr.responseText);
+                    console.log(responseData);
+                    if (responseData.message == "gagal") {
                         window.location.href = "login";
                         alert("Login failed!");
                     } else {

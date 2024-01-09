@@ -6,9 +6,9 @@ import os
 
 conn = psycopg2.connect(
     host="localhost",
-    database="stopify1",
+    database="stopify",
     user="postgres",
-    password="user"
+    password="root"
 )
 
 cur = conn.cursor()

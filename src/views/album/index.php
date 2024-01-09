@@ -21,7 +21,7 @@ require_once(PROJECT_ROOT_PATH . "/src/views/partials/album.php");
 
     <?php echo Font(); ?>
     
-    <title>Stopfiy Album</title>
+    <title>Stopfiy - Album</title>
 </head>
 <body>
     <div class="whole-wrapper">

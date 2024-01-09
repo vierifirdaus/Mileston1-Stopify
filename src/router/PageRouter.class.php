@@ -78,7 +78,7 @@ class PageRouter
             }
             else 
             {
-                require_once PROJECT_ROOT_PATH . "/src/views/404/index.php";
+                require_once PROJECT_ROOT_PATH . "/src/views/login/index.php";
             }
         }
     }

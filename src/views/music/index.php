@@ -20,7 +20,7 @@ require_once(PROJECT_ROOT_PATH . "/src/views/partials/font.php");
 
     <?php echo Font(); ?>
 
-    <title><?php echo $this->params["id"]?></title>
+    <title>Stopify - Music</title>
     
 </head>
 <body>

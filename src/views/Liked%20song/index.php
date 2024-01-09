@@ -19,7 +19,7 @@ require_once(PROJECT_ROOT_PATH . "/src/views/partials/liked_song.php");
         <link rel="stylesheet" href="css/pagination.css">
 
         <?php echo Font(); ?>
-        <title>Stopify</title>
+        <title>Stopify - Liked Song</title>
     </head>
     <body>
         <input type="hidden" id="custId" name="custId" value="<?php echo $_SESSION["id_user"] ?>">

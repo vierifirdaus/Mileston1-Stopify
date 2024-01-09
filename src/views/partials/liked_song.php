@@ -25,7 +25,7 @@ function likedSong($params)
 
     $html = icon($_SESSION["username"]);
     $liked = '<div class="liked-detail">
-                    <img src="image/senja.jpg"  alt="image/none.jpg">
+                    <img src="assets/icon_pagination/Rectangle 99.png"  alt="image/none.jpg">
                     <div class="liked-detail-text">
                         <h1>PLAYLIST</h1>
                         <h2>Liked Songs</h1>
@@ -44,7 +44,7 @@ function likedSong($params)
             $data->genre_name,
             $data->album_title,
             $data->artist_name,
-            $data->release_date
+            substr($data->release_date,0,4)
         ];
     }
     $html.=tables($heading,$dataTable);

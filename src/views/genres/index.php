@@ -16,8 +16,9 @@ require_once(PROJECT_ROOT_PATH . "/src/views/partials/font.php");
     <link rel="stylesheet" href="css/limit_page.css">
 
     <script src="js/genre.js"></script>
+    <script src="js/genre_input.js"></script>
     <?php echo Font(); ?>
-    <title>Document</title>
+    <title>Stopify - Genres</title>
 </head>
 <body>
     <div class="dialog-section"></div>
